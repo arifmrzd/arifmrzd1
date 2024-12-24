@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let analyser;
   let microphone;
   let audio = new Audio('partyhornsound.mp3');
+  
 
 
   function updateCandleCount() {
