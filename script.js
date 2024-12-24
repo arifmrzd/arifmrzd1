@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let microphone;
   let audio = new Audio('partyhornsound.mp3');
   let audio2 = new Audio('birthdaysong.mp3');
-  audio2.volume = 0.2;
+  audio2.volume = 0.1;
 
 
   function updateCandleCount() {
