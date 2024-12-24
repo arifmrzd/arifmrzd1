@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let analyser;
   let microphone;
   let audio = new Audio('partyhornsound.mp3');
+  let audio2 = new Audio('birthdaysong.mp3');
   
 
 
@@ -76,7 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
           triggerConfetti();
           endlessConfetti(); // Start the endless confetti
         }, 200);
+        
         audio.play();
+      
+        // Tambahkan event listener untuk audio pertama
+        audio.addEventListener('ended', function() {
+          audio2.play(); // Memainkan audio kedua setelah audio pertama selesai
+        });
       }
     }
   }
